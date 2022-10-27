@@ -27,7 +27,6 @@ async function submitCourse(): Promise<void> {
 		? "free"
 		: parseInt(courseCost.value);
 	// Make a POST request
-	console.log(courseCostValue)
 	await fetch(`${apiHost}/api/courses`, {
 		method: "POST",
 		headers: { "Content-Type": "application/json" },
